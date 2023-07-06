@@ -1,6 +1,5 @@
 parameter N = 8;
 parameter M = 16;
-
 interface Dinter;
 	logic [N-1:0]A;
 	logic [N-1:0]B;
@@ -8,7 +7,6 @@ interface Dinter;
 	logic [M-1:0]out;
 endinterface : Dinter
 	
-
 module ALU_T (Dinter intd);/*(
 	
 	input [N-1:0]A,
@@ -34,7 +32,6 @@ module ALU_T (Dinter intd);/*(
 	end
 endmodule
 
-
 module ALU_TB;
 	  
 	 /* reg [N-1:0]A;
@@ -59,23 +56,9 @@ module ALU_TB;
 			intd.B = 8'h03;
 			intd.sel = 3'b001;
 			end
-			
-			begin
-			
-	
-			
-			end
-		
 		join
 		;
 	initial begin
 		$monitor("A = %b,B = %B,sel = %b,out = %b",intd.A,intd.B,intd.sel,intd.out);
 	end
 endmodule 
-		
-		
-	
-			
-	
-	
-			  
