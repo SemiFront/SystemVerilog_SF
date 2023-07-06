@@ -1,7 +1,5 @@
 module top;
- 
   class a;
- 
    randc int num;
     int rang1=1;
     int rang2=200;
@@ -12,10 +10,8 @@ module top;
   int value;
   int i;
   int count;
- 
   initial begin
     handlee = new();
- 
     repeat(200) begin
       count = 0; // Initialize count for each iteration
       handlee.randomize();
@@ -30,5 +26,4 @@ module top;
       end
     end
   end
-
 endmodule
